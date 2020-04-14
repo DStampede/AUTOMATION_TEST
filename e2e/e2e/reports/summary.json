@@ -1,0 +1,61 @@
+[
+  {
+    "description": " As a User \n  I should be able to access the sytem with proper credentials ",
+    "keyword": "Feature",
+    "name": "Security",
+    "line": 1,
+    "id": "security",
+    "tags": [],
+    "uri": "e2e\\src\\features\\security\\security.feature",
+    "elements": [
+      {
+        "id": "security;login-the-user",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Login the User",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am on the  Login Page",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I log in",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should be redirected to dashboard",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

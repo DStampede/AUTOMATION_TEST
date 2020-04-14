@@ -1,0 +1,395 @@
+[
+  {
+    "description": "    As a user\n    I should be able to Create, Read, Update, and Delete an Employee.",
+    "keyword": "Feature",
+    "name": "Employee",
+    "line": 2,
+    "id": "employee",
+    "tags": [
+      {
+        "name": "@Employee",
+        "line": 1
+      }
+    ],
+    "uri": "src\\feature\\employee.feature",
+    "elements": [
+      {
+        "id": "employee;create-an-employee",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Create an Employee",
+        "tags": [
+          {
+            "name": "@Employee",
+            "line": 1
+          },
+          {
+            "name": "@CreateEmployee",
+            "line": 6
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "src\\hooks\\generic.hooks.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 112000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I go to \"http://clark.titusgt.com:6042/#/hmws/employees\"",
+            "match": {
+              "location": "src\\step_definition\\employee.definitions.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28933000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I have an existing \"Department\"",
+            "match": {
+              "location": "src\\step_definition\\employee.definitions.ts:19"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 169000000,
+              "error_message": "NoSuchElementError: No element found using locator: By(link text, Resources)\n    at C:\\Users\\MK44\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:814:27\n    at ManagedPromise.invokeCallback_ (C:\\Users\\MK44\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\Users\\MK44\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Users\\MK44\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at C:\\Users\\MK44\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27\n    at C:\\Users\\MK44\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at processTicksAndRejections (internal/process/task_queues.js:94:5)Error: \n    at ElementArrayFinder.applyAction_ (C:\\Users\\MK44\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:459:27)\n    at ElementArrayFinder.<computed> [as click] (C:\\Users\\MK44\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:91:29)\n    at ElementFinder.<computed> [as click] (C:\\Users\\MK44\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:831:22)\n    at Function.<anonymous> (C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\src\\po\\dashboard.po.ts:17:35)\n    at step (C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\node_modules\\tslib\\tslib.js:136:27)\n    at Object.next (C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\node_modules\\tslib\\tslib.js:117:57)\n    at C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\node_modules\\tslib\\tslib.js:110:75\n    at new Promise (<anonymous>)\n    at Object.__awaiter (C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\node_modules\\tslib\\tslib.js:106:16)\n    at Function.DashboardPage.gotoEmployee (C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\src\\po\\dashboard.po.ts:31:24)\n    at World.<anonymous> (C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\src\\step_definition\\employee.definitions.ts:22:31)\n    at step (C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\node_modules\\tslib\\tslib.js:136:27)\n    at Object.next (C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\node_modules\\tslib\\tslib.js:117:57)\n    at C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\node_modules\\tslib\\tslib.js:110:75\n    at new Promise (<anonymous>)\n    at Object.__awaiter (C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\node_modules\\tslib\\tslib.js:106:16)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I \"create\" a \"Employee\"",
+            "match": {
+              "location": "src\\step_definition\\employee.definitions.ts:33"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should be redirected to the details page of the created \"Employee\"",
+            "match": {
+              "location": "src\\step_definition\\employee.definitions.ts:78"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I should see the \"created\" item details of the \"Employee\"",
+            "match": {
+              "location": "src\\step_definition\\employee.definitions.ts:82"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "employee;read-employee-details-from-the-table",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Read Employee details from the table",
+        "tags": [
+          {
+            "name": "@Employee",
+            "line": 1
+          },
+          {
+            "name": "@ReadEmployee",
+            "line": 14
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "src\\hooks\\generic.hooks.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 785000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "I have an existing \"Employee\"",
+            "match": {
+              "location": "src\\step_definition\\employee.definitions.ts:19"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 25000000,
+              "error_message": "NoSuchElementError: No element found using locator: By(link text, abner)\n    at C:\\Users\\MK44\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:814:27\n    at ManagedPromise.invokeCallback_ (C:\\Users\\MK44\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\Users\\MK44\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Users\\MK44\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at C:\\Users\\MK44\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27\n    at C:\\Users\\MK44\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at processTicksAndRejections (internal/process/task_queues.js:94:5)Error: \n    at ElementArrayFinder.applyAction_ (C:\\Users\\MK44\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:459:27)\n    at ElementArrayFinder.<computed> [as click] (C:\\Users\\MK44\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:91:29)\n    at ElementFinder.<computed> [as click] (C:\\Users\\MK44\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:831:22)\n    at Function.<anonymous> (C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\src\\po\\dashboard.po.ts:24:41)\n    at step (C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\node_modules\\tslib\\tslib.js:136:27)\n    at Object.next (C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\node_modules\\tslib\\tslib.js:117:57)\n    at C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\node_modules\\tslib\\tslib.js:110:75\n    at new Promise (<anonymous>)\n    at Object.__awaiter (C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\node_modules\\tslib\\tslib.js:106:16)\n    at Function.DashboardPage.readEmployee (C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\src\\po\\dashboard.po.ts:53:24)\n    at World.<anonymous> (C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\src\\step_definition\\employee.definitions.ts:25:31)\n    at step (C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\node_modules\\tslib\\tslib.js:136:27)\n    at Object.next (C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\node_modules\\tslib\\tslib.js:117:57)\n    at C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\node_modules\\tslib\\tslib.js:110:75\n    at new Promise (<anonymous>)\n    at Object.__awaiter (C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\node_modules\\tslib\\tslib.js:106:16)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I go to \"http://clark.titusgt.com:6042/#/hmws/employees\"",
+            "match": {
+              "location": "src\\step_definition\\employee.definitions.ts:11"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I should \"see\" the details of the \"Employees\" in the table",
+            "match": {
+              "location": "src\\step_definition\\employee.definitions.ts:85"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "employee;edit-a-employee",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Edit a Employee",
+        "tags": [
+          {
+            "name": "@Employee",
+            "line": 1
+          },
+          {
+            "name": "@EditEmployee",
+            "line": 20
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "src\\hooks\\generic.hooks.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 315000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "I have an existing \"Employee\"",
+            "match": {
+              "location": "src\\step_definition\\employee.definitions.ts:19"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 16000000,
+              "error_message": "NoSuchElementError: No element found using locator: By(link text, abner)\n    at C:\\Users\\MK44\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:814:27\n    at ManagedPromise.invokeCallback_ (C:\\Users\\MK44\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\Users\\MK44\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Users\\MK44\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at C:\\Users\\MK44\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27\n    at C:\\Users\\MK44\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at processTicksAndRejections (internal/process/task_queues.js:94:5)Error: \n    at ElementArrayFinder.applyAction_ (C:\\Users\\MK44\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:459:27)\n    at ElementArrayFinder.<computed> [as click] (C:\\Users\\MK44\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:91:29)\n    at ElementFinder.<computed> [as click] (C:\\Users\\MK44\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:831:22)\n    at Function.<anonymous> (C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\src\\po\\dashboard.po.ts:24:41)\n    at step (C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\node_modules\\tslib\\tslib.js:136:27)\n    at Object.next (C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\node_modules\\tslib\\tslib.js:117:57)\n    at C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\node_modules\\tslib\\tslib.js:110:75\n    at new Promise (<anonymous>)\n    at Object.__awaiter (C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\node_modules\\tslib\\tslib.js:106:16)\n    at Function.DashboardPage.readEmployee (C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\src\\po\\dashboard.po.ts:53:24)\n    at World.<anonymous> (C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\src\\step_definition\\employee.definitions.ts:25:31)\n    at step (C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\node_modules\\tslib\\tslib.js:136:27)\n    at Object.next (C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\node_modules\\tslib\\tslib.js:117:57)\n    at C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\node_modules\\tslib\\tslib.js:110:75\n    at new Promise (<anonymous>)\n    at Object.__awaiter (C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\node_modules\\tslib\\tslib.js:106:16)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "I am on \"http://clark.titusgt.com:6042/#/hmws/employees\"",
+            "match": {
+              "location": "src\\step_definition\\employee.definitions.ts:15"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I \"edit\" a \"Employee\"",
+            "match": {
+              "location": "src\\step_definition\\employee.definitions.ts:33"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "I should \"see\" the details of the \"Employees\" in the table",
+            "match": {
+              "location": "src\\step_definition\\employee.definitions.ts:85"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "I should see the \"updated\" item details of the \"Employee\"",
+            "match": {
+              "location": "src\\step_definition\\employee.definitions.ts:82"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "employee;delete-a-employee",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Delete a Employee",
+        "tags": [
+          {
+            "name": "@Employee",
+            "line": 1
+          },
+          {
+            "name": "@DeleteEmployee",
+            "line": 28
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "src\\hooks\\generic.hooks.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 543000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 30,
+            "name": "I have an existing \"Employee\"",
+            "match": {
+              "location": "src\\step_definition\\employee.definitions.ts:19"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 18000000,
+              "error_message": "NoSuchElementError: No element found using locator: By(link text, abner)\n    at C:\\Users\\MK44\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:814:27\n    at ManagedPromise.invokeCallback_ (C:\\Users\\MK44\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\Users\\MK44\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Users\\MK44\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at C:\\Users\\MK44\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27\n    at C:\\Users\\MK44\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at processTicksAndRejections (internal/process/task_queues.js:94:5)Error: \n    at ElementArrayFinder.applyAction_ (C:\\Users\\MK44\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:459:27)\n    at ElementArrayFinder.<computed> [as click] (C:\\Users\\MK44\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:91:29)\n    at ElementFinder.<computed> [as click] (C:\\Users\\MK44\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:831:22)\n    at Function.<anonymous> (C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\src\\po\\dashboard.po.ts:24:41)\n    at step (C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\node_modules\\tslib\\tslib.js:136:27)\n    at Object.next (C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\node_modules\\tslib\\tslib.js:117:57)\n    at C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\node_modules\\tslib\\tslib.js:110:75\n    at new Promise (<anonymous>)\n    at Object.__awaiter (C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\node_modules\\tslib\\tslib.js:106:16)\n    at Function.DashboardPage.readEmployee (C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\src\\po\\dashboard.po.ts:53:24)\n    at World.<anonymous> (C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\src\\step_definition\\employee.definitions.ts:25:31)\n    at step (C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\node_modules\\tslib\\tslib.js:136:27)\n    at Object.next (C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\node_modules\\tslib\\tslib.js:117:57)\n    at C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\node_modules\\tslib\\tslib.js:110:75\n    at new Promise (<anonymous>)\n    at Object.__awaiter (C:\\Users\\MK44\\Desktop\\AutomatedTesting\\OJT-Asessment\\e2e\\node_modules\\tslib\\tslib.js:106:16)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "I am on \"http://clark.titusgt.com:6042/#/hmws/employees\"",
+            "match": {
+              "location": "src\\step_definition\\employee.definitions.ts:15"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "I \"delete\" a \"Employee\"",
+            "match": {
+              "location": "src\\step_definition\\employee.definitions.ts:33"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "I should \"not see\" the details of the \"Employee\" in the table",
+            "match": {
+              "location": "src\\step_definition\\employee.definitions.ts:85"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

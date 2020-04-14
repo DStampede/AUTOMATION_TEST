@@ -1,0 +1,177 @@
+[
+  {
+    "description": "    As a User\n    I should be able to access the system with proper credentials",
+    "keyword": "Feature",
+    "name": "Security",
+    "line": 2,
+    "id": "security",
+    "tags": [
+      {
+        "name": "@Security",
+        "line": 1
+      }
+    ],
+    "uri": "src\\feature\\security\\security.feature",
+    "elements": [
+      {
+        "id": "security;login",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Login",
+        "tags": [
+          {
+            "name": "@Security",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am on the login page",
+            "match": {
+              "location": "src\\steps_definition\\security_definitions.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1624000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I log in",
+            "match": {
+              "location": "src\\steps_definition\\security_definitions.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 411000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should be redirected to the dashboard",
+            "match": {
+              "location": "src\\steps_definition\\security_definitions.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 45000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "    As a User\n    I should be able to edit employee details",
+    "keyword": "Feature",
+    "name": "Update",
+    "line": 2,
+    "id": "update",
+    "tags": [
+      {
+        "name": "@Update",
+        "line": 1
+      }
+    ],
+    "uri": "src\\feature\\update\\update.feature",
+    "elements": [
+      {
+        "id": "update;update",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Update",
+        "tags": [
+          {
+            "name": "@Update",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am on the dashboard2",
+            "match": {
+              "location": "src\\steps_definition\\update_definition.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I updated an Employee",
+            "match": {
+              "location": "src\\steps_definition\\update_definition.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 845000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should see the updated success message \"Data has been updated!\"",
+            "match": {
+              "location": "src\\steps_definition\\update_definition.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 80000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I should see the updated data on the table",
+            "match": {
+              "location": "src\\steps_definition\\update_definition.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 407000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
